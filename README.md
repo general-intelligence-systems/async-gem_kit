@@ -11,9 +11,9 @@ Create a repo from this template ("Use this template" on GitHub, or `gh` below),
 then run the numbered bootstrap scripts in order:
 
 ```bash
-gh repo create my-org/async-http \
-  --template general-intelligence-systems/async-gem_kit --private --clone
+gh repo create my-org/async-http --template general-intelligence-systems/async-gem_kit --private --clone
 cd async-http
+
 bin/01-rename-gem async-http   # rename the gem and its files
 bin/02-choose-license          # pick a license interactively
 bin/03-update-spec             # fill in authors, summary, homepage, etc.
