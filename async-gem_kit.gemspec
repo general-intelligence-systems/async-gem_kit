@@ -1,20 +1,20 @@
 # frozen_string_literal: true
 
-require_relative "lib/gem_kit/version"
+require_relative "lib/async/gem_kit/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "gem_kit"
-  spec.version = GemKit::VERSION
+  spec.name = "async-gem_kit"
+  spec.version = Async::GemKit::VERSION
   spec.authors = ["Nathan K"]
   spec.email = ["nathankidd@hey.com"]
 
-  spec.summary = "Dynamic gem template"
+  spec.summary = "Async-native Ruby gem template"
 
   spec.description = <<~DESC
-    Clone the repo and run bin/rename-gem and you have a gem.
+    Clone the repo and run bin/rename-gem async-<name> to scaffold an async-native gem.
   DESC
 
-  spec.homepage = "https://github.com/n-at-han-k/gem-kit"
+  spec.homepage = "https://github.com/general-intelligence-systems/async-gem_kit"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2.0"
 
@@ -27,6 +27,8 @@ Gem::Specification.new do |spec|
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_dependency "async", "~> 2.0"
 
   spec.add_development_dependency "minitest", "~> 5.0"
   spec.add_development_dependency "rake", "~> 13.0"

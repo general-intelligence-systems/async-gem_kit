@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require_relative "../lib/gem_kit/version"
+require_relative "../lib/async/gem_kit/version"
 
-local_version = GemKit::VERSION
-gem_name = "gem_kit"
-gemspec = "gem_kit.gemspec"
+local_version = Async::GemKit::VERSION
+gem_name = "async-gem_kit"
+gemspec = "async-gem_kit.gemspec"
 
 puts "Local version: #{local_version}"
 
