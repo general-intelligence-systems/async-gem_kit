@@ -165,6 +165,3 @@ puts "  updated #{File.basename(__FILE__)} (current_full = \"#{new_full}\")"
 
 puts "\nRenamed #{current_full} -> #{new_full} " \
      "(#{old_segs.map { |s| to_camel(s) }.join('::')} -> #{new_camels.join('::')})"
-
-puts "Removing git remote origin... add your own."
-system("git", "remote", "remove", "origin", out: File::NULL, err: File::NULL)
